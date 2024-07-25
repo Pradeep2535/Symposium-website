@@ -4,18 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Page</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="appbar.css">
-    <link rel="stylesheet" href="register-button.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-    <link rel="stylesheet" href="timer.css">
-    <link rel="stylesheet" href="airo-main.css">
-    <link rel="stylesheet" href="styles/sairam.css">
-    
-    <link rel="stylesheet" href="styles/style-prize.css">
- 
-
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     
@@ -25,26 +16,14 @@
                 <a href="#" class="logo">AIRO 4.0   </a>
                 <nav id="navLinks">
                     <ul>
-                        
-                        <button class="btn">Home</button>
-                        <button class="btn">About</button>
-                        <button class="btn">Schedules</button> 
-                        <button class = "btn register">
-                            <svg
-                              height="24"
-                              width="24"
-                              viewBox="0 0 24 24"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path d="M0 0h24v24H0z" fill="none"></path>
-                              <path
-                                d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
-                                fill="currentColor"
-                              ></path>
-                            </svg>
-                            <span>Register</span>
-                          </button>
-                          
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Schedules</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Sponsors</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -54,8 +33,8 @@
         <div class="airo-main">
             <svg class = "svgs" viewBox="0 0 960 300">
                 <symbol id="s-text">
-                  <text text-anchor="middle" x="50%" y="80%">AIRO 4.0</text>
-                  <text text-anchor="middle" x="52%" y="80%">AIRO 4.0</text>
+                  <text text-anchor="middle" x="50%" y="80%">A I Я O    4.0</text>
+                  <text text-anchor="middle" x="52%" y="80%">A I Я O    4.0</text>
                   
                 </symbol>
               
@@ -68,118 +47,35 @@
                 </g>
               </svg>
         </div>
-        
-            <div class="countdown">
-                <div class="wrap">  
-                    <div class="countdown">
-                      <div class="bloc-time hours" data-init-value="24">
-                        <span class="count-title">Hours</span>
-                  
-                        <div class="figure hours hours-1">
-                          <span class="top">2</span>
-                          <span class="top-back">
-                            <span>2</span>
-                          </span>
-                          <span class="bottom">2</span>
-                          <span class="bottom-back">
-                            <span>2</span>
-                          </span>
-                        </div>
-                  
-                        <div class="figure hours hours-2">
-                          <span class="top">4</span>
-                          <span class="top-back">
-                            <span>4</span>
-                          </span>
-                          <span class="bottom">4</span>
-                          <span class="bottom-back">
-                            <span>4</span>
-                          </span>
-                        </div>
-                      </div>
-                      <div class="bloc-time hours" data-init-value="24">
-                        <span class="count-title">Hours</span>
-                  
-                        <div class="figure hours hours-1">
-                          <span class="top">2</span>
-                          <span class="top-back">
-                            <span>2</span>
-                          </span>
-                          <span class="bottom">2</span>
-                          <span class="bottom-back">
-                            <span>2</span>
-                          </span>
-                        </div>
-                  
-                        <div class="figure hours hours-2">
-                          <span class="top">4</span>
-                          <span class="top-back">
-                            <span>4</span>
-                          </span>
-                          <span class="bottom">4</span>
-                          <span class="bottom-back">
-                            <span>4</span>
-                          </span>
-                        </div>
-                      </div>
-                  
-                      <div class="bloc-time min" data-init-value="0">
-                        <span class="count-title">Minutes</span>
-                  
-                        <div class="figure min min-1">
-                          <span class="top">0</span>
-                          <span class="top-back">
-                            <span>0</span>
-                          </span>
-                          <span class="bottom">0</span>
-                          <span class="bottom-back">
-                            <span>0</span>
-                          </span>        
-                        </div>
-                  
-                        <div class="figure min min-2">
-                         <span class="top">0</span>
-                          <span class="top-back">
-                            <span>0</span>
-                          </span>
-                          <span class="bottom">0</span>
-                          <span class="bottom-back">
-                            <span>0</span>
-                          </span>
-                        </div>
-                      </div>
-                  
-                      <div class="bloc-time sec" data-init-value="0">
-                        <span class="count-title">Seconds</span>
-                  
-                          <div class="figure sec sec-1">
-                          <span class="top">0</span>
-                          <span class="top-back">
-                            <span>0</span>
-                          </span>
-                          <span class="bottom">0</span>
-                          <span class="bottom-back">
-                            <span>0</span>
-                          </span>          
-                        </div>
-                  
-                        <div class="figure sec sec-2">
-                          <span class="top">0</span>
-                          <span class="top-back">
-                            <span>0</span>
-                          </span>
-                          <span class="bottom">0</span>
-                          <span class="bottom-back">
-                            <span>0</span>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+    </section>
+    <section class="countdown">
+        <h2>EVENT WILL START IN</h2>
+        <div class="countdown-timer">
+            <div class="time-box">
+                <span id="days">0</span>
+                <p>DAYS</p>
             </div>
-        
-
-    <div class="features">
+            <div class="time-box">
+                <span id="hours">00</span>
+                <p>HOURS</p>
+            </div>
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <p>MINUTES</p>
+            </div>
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <p>SECONDS</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="why-choose-us">
+            <h2>Why Choose Us.</h2>
+            <p>hi.</p>
+        </div>
+    </section>
+    <section class="features">
         <div class="feature-box">
             <img src="image1.png" alt="Get Inspired">
             <h3>Get Inspired</h3>
@@ -210,10 +106,18 @@
             <h3>Free Swags</h3>
             <p>Lorem ipsum dolor sit amet, consectetur commodo ligula eget dolor.</p>
         </div>
-    </div>
-    <div class="container-1">
-        
-    
+    </section>
+    <section class="container-1">
+        <div class="card-container">
+            <div class="card-content">
+                <div class="card-title">
+                    <span class="title">Bid and Code</span>
+                </div>
+                <div class="card-body">
+                    <button>Know More</button>
+                </div>
+            </div>
+        </div>
         <div class="card-container">
             <div class="card-content">
                 <div class="card-title">
@@ -264,24 +168,9 @@
                 </div>
             </div>
         </div>
-    </div>      
+    </section>      
     <section class="schedules">
-        
-
-        <div class="outer">
-            <div class="dot"></div>
-            <div class="card">
-              <div class="ray"></div>
-              <img src="Map Location.png" alt="Location">
-              <div class="text">Sri Sairam Engineering College</div>
-              <div class="text">West tambaram,chennai</div>
-              <div class="line topl"></div>
-              <div class="line leftl"></div>
-              <div class="line bottoml"></div>
-              <div class="line rightl"></div>
-            </div>
-          </div>
-        <!-- <div class="location">
+        <div class="location">
             <img src="Map Location.png" alt="Location">
             <h3>Sri Sairam Engineering College.</h3>
             <p>West Tambaram,Chennai</p>
@@ -323,7 +212,6 @@
             <p>Don't Miss It</p>
         </div> -->
     </section>
-    </div>
     <section class="prize-pool">
         <h1>Prize</h1>
         <p>Applicable To All Events</p>
@@ -723,7 +611,7 @@
             </div>
         </div> -->
     </section>
-    <section class="faq-container">
+    <section class="faq-container" id="FAQ">
         <h1>Frequently Asked Questions</h1>
         <details>
             <summary>What is the event about?</summary>
@@ -740,7 +628,7 @@
         <details>
             <summary>How do I register for the event?</summary>
             <div class="faq-content">
-                You can register for the event through our official website. Visit the registration page and fill out the required details.
+                You can register for the event through our official events website. Visit the registration page and fill out the required details.
             </div>
         </details>
         <details>
@@ -752,61 +640,52 @@
         <details>
             <summary>Is there any participation fee?</summary>
             <div class="faq-content">
-                Yes, there is a nominal participation fee for the event. The fee details are available on the registration page.
+                NO, there is no participation fee for the events.
             </div>
         </details>
-    
+        <details>
+            <summary>What about food and travel accomodation?</summary>
+            <div class="faq-content">
+                Food will be provided and for more information about travel, Please refer to the below link.<br>
+                <a href="">Sairam Bus Transport Routes</a> 
+            </div>
+        </details>
     </section>
     </main>
-    <footer>
+    <footer id="Contact-Us">
         <div class="footer-container">
             <div class="footer-section about">
-                <h2 class="logo-text"><span>GRAND</span></h2>
-                <p>Aorem ipsum dolor sit amet elit sed lum tempor incididunt ut labore el dolore alg minim veniam quis nostrud ncididunt.</p>
+                <h2 class="logo-text"><span>AIRO 4.0</span></h2>
+                <p class="quote">"Innovating Tomorrow, Today".</p>
             </div>
             <div class="footer-section links">
                 <h2>Quick Links</h2>
                 <ul>
-                    <li><a href="#">About Conference</a></li>
-                    <li><a href="#">Our Speakers</a></li>
-                    <li><a href="#">Event Schedule</a></li>
-                    <li><a href="#">Latest News</a></li>
-                    <li><a href="#">Event Photo Gallery</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">Prize</a></li>
+                    <li><a href="#">FAQ</a></li>
                 </ul>
             </div>
-            <div class="footer-section posts">
-                <h2>Recent Posts</h2>
-                <div class="post">
-                    <img src="path/to/image1.jpg" alt="post1">
-                    <p>Lorem ipsum dolor sumit.</p>
-                    <span>October 12, 2023</span>
-                </div>
-                <div class="post">
-                    <img src="path/to/image2.jpg" alt="post2">
-                    <p>Lorem ipsum dolor sumit.</p>
-                    <span>October 12, 2023</span>
-                </div>
+            <div class="footer-section contact">
+                <h2>For more queries, Contact our AIRO 4.0 Core Team</h2>
+                <p>Pradeep S</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Tharushi S S</p>
+                <p>Phone: </p>
             </div>
-            <div class="footer-section subscribe">
-                <h2>Subscribe Us</h2>
-                <form action="#">
-                    <input type="email" placeholder="Your Email">
-                    <button type="submit"></button>
-                </form>
+            <div class="footer-section socials">
                 <h2>Follow Us On</h2>
-                <div class="socials">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+                <a href="#"><img src="instagram.png" alt="Instagram" width="40" height="40"></a>
+                <a href="#"><img src="linkedin.png" alt="LinkedIn" width="40" height="40"></a>
             </div>
         </div>
         <div class="footer-bottom">
             &copy; Designed and Developed by AIRO 4.0 Web Development Team.
         </div>
     </footer>
-    <script src="timer.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 </body>
